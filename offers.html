@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
+    <title>AA Delish - Offers</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/ico.png" />
+
+    <!-- Link to Google Fonts for Lilita One and Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="" />
+    <style>
+        /* Custom CSS for offers page */
+        body {
+            font-family: 'Lilita One', cursive; /* Use 'Lilita One' font for body */
+            background-color: #f4ebdc;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container-detail {
+            padding: 20px;
+        }
+        .main-container-background img {
+            width: 100%;
+            height: auto;
+        }
+        .main {
+            margin-top: 20px;
+        }
+        .offers-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .offers-header h2 {
+            font-size: 1.8em;
+            margin: 0;
+            font-family: 'Lilita One', cursive;
+            color: #4e2415;
+        }
+        .p {
+         font-size: 20px;
+         font-family: 'Lilita One', cursive;
+         font-weight: 300; 
+         color: #4e2415;
+         }
+
+        .subheading {
+            font-family: 'Roboto', sans-serif; 
+            font-size: 1.0em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #4e2415;
+        }
+        .sort-by-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+            color: #4e2415;
+        }
+        .sort-by {
+            display: inline-block;
+            padding: 5px 20px 5px 9px; 
+            background-color: #efe3cf;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-family: 'Lilita One', cursive; 
+            position: relative;
+        }
+
+        .sort-by::after {
+            content: 'V'; 
+            font-size: 17px;
+            position: absolute;
+            right: 8px; 
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Lilita One', cursive; /* Use 'Lilita One' font for sort-by */
+        }
+
+        .offer-item {
+            display: flex; 
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .offer-item img {
+            width: 190px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .text-container {
+            display: inline-block; 
+        }
+        .offer-item .p {
+            font-weight: bold; 
+        }
+        
+            
+     
+        body {
+            font-family: 'Lilita One', cursive; 
+            background-color: #f4ebdc;
+            margin: 0;
+            padding: 0;
+            color: #4e2415; 
+        }
+        .main-container-fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f4ebdc;
+            padding: 5px 0;
+            text-align: center; 
+            font-family: 'Lilita One', cursive;
+        }
+        .col-btn {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .col-btn a {
+            color: #4e2415;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .col-btn a:hover {
+            color: #FF5722;
+        }
+        .col-btn i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .paragraph-text-smm {
+            font-size: 14px;
+            margin: 0;
+        }
+        #promo-code-btn {
+    position: fixed;
+    bottom: 100px; 
+    right: 20px;
+    background-color: #d42603;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 20px 20px;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+        #promo-code-btn:hover {
+            background-color: #d42603
+        }
+        #promo-code-btn i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container-detail">
+    <div class="main">
+        <div class="offers-header">
+            <h2>Offers</h2>
+        </div>
+        <div class="sort-by-container">
+            <div class="sort-by">Sort by</div>
+        </div>
+
+        <div class="offer-item">
+            <img src="img/food_1.png" alt="Classic Burger (small)" loading="lazy" />
+            <div class="text-container">
+                <p class="p">The Classic Burger </p>
+                <p class="subheading">Unlimited</p>
+                <p class="subheading">Expires in 15 days</p>
+            </div>
+        </div>
+        <div class="offer-item">
+            <img src="img/food_1.png" alt="Classic Burger (small)" loading="lazy" />
+            <div class="text-container">
+                <p class="p">The Classic Burger </p>
+                <p class="subheading">Unlimited</p>
+                <p class="subheading">Expires in 15 days </p>
+            </div>
+        </div>
+</div>
+
+<a href="">
+        <button class="primary-btn-wide" id="promo-code-btn" style="border-radius: 150;">
+            <i class="fas fa-gift" style="margin-right: 5px;"></i>
+            enter promo code 
+        </button>
+</a>
+<div class="main-container-fixed">
+    <div class="main">
+        <div class="row">
+            <div class="col-12 col-btn">
+                <a href="dashboard.html" class="btn-link" id="home-link">
+                    <i class="fas fa-home"></i>
+                    <br/>
+                    <span class="paragraph-text-smm">Home</span>
+                </a>
+            </div>
+            
+            <div class="col-12 col-btn">
+                <a href="category.html" class="btn-link" id="menu-link">
+                    <i class="fas fa-cookie"></i>
+                    <br/>
+                    <span class="paragraph-text-smm">Menu</span>
+                </a>
+            </div>
+            <div class="col-12 col-btn">
+                <a href="offers.html" class="btn-link" id="offers-link">
+                    <i class="fas fa-tag"></i>
+                    <br/>
+                    <span class="paragraph-text-smm">Offers</span>
+                </a>
+            </div>
+            <div class="col-12 col-btn">
+                <a href="profile.html" class="btn-link" id="profile-link">
+                    <i class="fas fa-user"></i>
+                    <br/>
+                    <span class="paragraph-text-smm">Profile</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer>
+    
+</footer>
+
+</body>
+</html>

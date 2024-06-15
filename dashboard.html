@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>AA Delish</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4ebdc;
+            overflow-y: auto;
+            font-family: 'Lilita One', cursive;
+        }
+
+        .main-container-detail {
+            text-align: center;
+            margin-top: -100px;
+            min-height: 100vh;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        .main-container-background img {
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: -14%;
+        }
+
+        .main1 {
+            margin: 50px auto 5%;
+            width: 90%;
+            display: block;
+        }
+
+        .primary-btn-wide {
+            width: 100%;
+            padding: 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: #d42603;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .primary-btn-wide:hover {
+            background-color: #693427;
+        }
+
+        .swiper-container {
+            width: 95vw;
+            max-width: 400px;
+            height: auto;
+            position: relative;
+            margin: 20px auto;
+            z-index: 1; 
+        }
+
+        .swiper-slide {
+            display: none; 
+        }
+
+        .swiper-slide-active,
+        .swiper-slide-prev,
+        .swiper-slide-next {
+            display: block; 
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sub-headline {
+            font-family: 'Quicksand', sans-serif; 
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .paragraph {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            text-align: left;
+        }
+
+        h1 {
+            text-align: left;
+            margin: 5%;
+            font-family: 'Lilita One', cursive; 
+        }
+
+        h2 {
+            text-align: right;
+            margin: 5%;
+            font-family: 'Quicksand', sans-serif; 
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            background-color: #f1e2ca;
+            padding: 10px;
+        }
+
+        .containeer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f1e2ca;
+        }
+
+        .item1 {
+            background-color: #f4ebdc;
+            padding: 10px;
+        }
+
+        .item {
+            background-color: #f4ebdc;
+            padding: 10px;
+        }
+
+        :link {
+            text-decoration: none;
+        }
+
+        .main-container-fixed1 {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4ebdc;
+            z-index: 10; 
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            padding: -2px 0; /* Reduced padding */
+        }
+
+        .col-12 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .col-btn {
+            padding: 3px; /* Reduced padding */
+        }
+
+        .btn-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .btn-link i {
+            font-size: 30px; /* Reduced font size */
+        }
+
+        .paragraph-text-smm {
+            display: block;
+            font-size: 15px; /* Reduced font size */
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container-detail">
+    <div class="main-container-background">
+        <img src="img/Home.jpg" />
+    </div>
+
+    <div class="main1">
+        <a href="menu.html">
+            <button class="primary-btn-wide" id="btn">Order now</button>
+        </a>
+    </div>
+ 
+<div class="card-container">
+    <div class="card" style="margin-bottom: 20px; border-radius: 5px; padding: 5px; background-color: #f4ebdc; box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);">
+        <div class="container">
+            <a href="">
+            <div class="item1" style="font-size: 30px; color: #693427; font-weight: bold;">king finder</div>
+            </a>
+            <a href="">
+            <div class="item1" style="font-size: 20px; color: #d42603;">view all</div>
+            </a>
+        </div>
+        <div class="item1 sub-headline" style="color: #4e2415;">Gwarimpa</div>
+        <div class="paragraph" style="color: #4e2415;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae quam justo.
+        </div>
+    </div>
+</div>
+
+<center style="margin-bottom: 20px;">
+    <div class="container">
+        <a href="">
+        <div class="item" style="font-size: 30px; color: #693427; font-weight: bold;">News </div>
+        </a>
+        <a href="">
+        <div class="item" style="font-size: 20px;color: #d42603;">view all</div>
+        </a>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img style="width: 370px; border-radius: 10px; height: 300px;" src="img/offer-4 - Copy.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img style="width: 370px; border-radius: 10px; height: 300px" src="img/offer-4 - Copy.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img style="width: 370px; border-radius: 10px; height: 300px" src="img/offer-4 - Copy.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img style="width: 370px; border-radius: 10px; height: 300px" src="img/offer-4 - Copy.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+                <img style="width: 370px; border-radius: 10px; height: 300px" src="img/offer-4 - Copy.png" alt="Image 1">
+            </div>
+        </div>
+    </div>
+</center>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
+    });
+</script>
+
+<space style="padding: 60px;">
+</space>
+
+<div class="main-container-fixed1">
+    <div class="main">
+        <div class="col-12 col-btn">
+            <a href="dashboard.html" class="btn-link" id="home-link">
+                <i class="fas fa-home"></i>
+                <br/>
+                <span class="paragraph-text-smm">Home</span>
+            </a>
+        </div>
+        
+        <div class="col-12 col-btn">
+        <a href="category.html" class="btn-link" id="menu-link">
+            <i class="fas fa-cookie"></i>
+            <br/>
+            <span class="paragraph-text-smm">Menu</span>
+        </a>
+    </div>
+    <div class="col-12 col-btn">
+        <a href="offers.html" class="btn-link" id="offers-link">
+            <i class="fas fa-tag"></i>
+            <br/>
+            <span class="paragraph-text-smm">Offers</span>
+        </a>
+    </div>
+    <div class="col-12 col-btn">
+        <a href="profile.html" class="btn-link" id="profile-link">
+            <i class="fas fa-user"></i>
+            <br/>
+            <span class="paragraph-text-smm">Profile</span>
+        </a>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f0e6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f0e6;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .close-button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #502314;
+        }
+
+        .item-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-family: 'Lilita One', cursive;
+            font-size: 1.8em;
+            color: #502314;
+            margin: 20px 0;
+        }
+        h2 {
+            font-family: 'Lilita One', cursive;
+            font-size: 1.3em;
+            color: #502314;
+            margin: 20px 0;
+          
+        }
+        p {
+            font-size: 16px;
+            color: #502314;
+            margin-bottom: 20px;
+        }
+
+        .main content,
+        .price-options,
+        .instructions-section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #50231491;
+        }
+
+        .quantity-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 29px;
+            font: 300;
+            color: #502314;
+            font-size: 20px;
+            font-family: 'Lilita One', cursive;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-button {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 5px 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .quantity-selector input {
+            width: 30px;
+            text-align: center;
+            border: none;
+            background-color: #fff;
+            font-size: 16px;
+            margin: 0 5px;
+            
+        }
+
+        .price-options {
+            text-align: left;
+        }
+
+        .price-options label {
+            display: block;
+            margin-bottom: 20px;
+           
+
+        }
+
+        .instructions-button {
+    display: flex;
+    align-items: center;
+    border: none; /* Remove default button border */
+    background: none; /* Remove default button background */
+    cursor: pointer; /* Add cursor pointer */
+    padding: 10px; /* Add some padding */
+}
+
+.instructions-button .icon {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.instructions-button h2 {
+    margin: 0; /* Remove default margin from h2 */
+    font-size: 16px; /* Adjust font size */
+}
+
+        .add-to-cart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            color: #f3f3f3;
+            margin-top: 29px;
+            width: 100%;
+            background-color: #d62400;
+            padding: 15px 30px;
+            border-radius: 6px;
+        }
+
+        .add-button {
+            background-color: #d62400;
+            color: #f3f3f3;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .price-options{
+            color: #502314;
+            
+        }
+        .price-options input[type="radio"]:checked::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background-color: #ff862f;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .price-options input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ff862f;
+            border-radius: 50%;
+            margin-right: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+        .quantity-button {
+            background-color: #ff862f;
+            color: #f3f3f3;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .quantity-selector input {
+            width: 40px;
+            text-align: center;
+            border: none;
+            background-color: #fff;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="menu.html"><button class="close-button">&times;</button></a>
+        </header>
+        <main class="main-content">
+            <img src="img/card-2.webp" alt="Onion Rings" class="item-image">
+            <h1>Onion Rings</h1>
+            <p>Served hot and crispy, our golden Onion Rings are the perfect treat to accompany any meal.</p>
+            <div class="quantity-section">
+                <label for="quantity">Quantity:</label>
+                <div class="quantity-selector">
+                    <button class="quantity-button">-</button>
+                    <input type="text" id="quantity" value="1" readonly>
+                    <button class="quantity-button">+</button>
+                </div>
+            </div>
+            <div class="price-options">
+                <label>
+                    <input type="radio" name="price" checked>
+                    6 Pc <br></br> ₦1,200.00
+                </label>
+                <label>
+                    <input type="radio" name="price">
+                    9 Pc <br></br> ₦1,500.00
+                </label>
+            </div>
+            <div class="instructions-section">
+                <button class="instructions-button">
+                    <img src="img/chat_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Chat Icon" class="icon">
+                    <h2>Give instructions</h2>
+                </button>
+            </div>
+            <div class="add-to-cart">
+                <span>₦1,200.00</span>
+                <button class="add-button">Add</button>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>

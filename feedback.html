@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        /* styles.css */
+body {
+    font-family: 'Lilita One', cursive;
+    background-color: #fff5e8;
+    margin: 0;
+    padding: 0;
+    color: #502314;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    font-size: 25px;
+}
+
+.icon-container {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.icon {
+    width: 30px;
+    vertical-align: middle;
+    color: #502314;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4ebdc;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    
+}
+
+.feedback-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #502314;
+}
+
+.feedback-form p {
+    color: #502314;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    height: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #50231400;
+    border: #502314;
+    background-color: #f4ebdc;
+    margin-bottom: 10px;
+    resize: none;
+    margin-top: 10px;
+}
+
+.character-count {
+    text-align: left;
+    color: #5023148c;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.send-button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Lilita One', cursive;
+}
+
+.send-button:hover {
+    background-color: #d9534f;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+   margin-top: 30px;
+
+}
+ 
+    </style>
+    <div class="container">
+        <header>
+            <div class="icon-container">
+                <a href="profile.html">
+                    <img src="img/arrow_back_20dp_FILL0_wght400_GRAD0_opsz20.png" alt="Back Icon" class="icon">
+                </a>
+            </div>
+      
+        </header>
+        <div class="feedback-form">
+            <h1>Send feedback</h1>
+            <p>We appreciate your feedback. Describe an issue or share your ideas.</p>
+            <main>
+            <textarea placeholder="Let us know your thoughts..." maxlength="1000"></textarea>
+            </main>
+            <div class="character-count">Maximum 1000 characters</div>
+            <a href="">
+            <button class="send-button">Send</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

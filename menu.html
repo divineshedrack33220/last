@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F4EBDC;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-container {
+            background-color: #F4EBDC;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+        }
+
+        .back-arrow {
+            font-size: 50px;
+            color: #502314;
+            cursor: pointer;
+            margin-right: 10px;
+            text-decoration-line: none;
+            
+        }
+            
+        .h1 {
+            font-family: 'Lilita One', cursive;
+            font-size: 1.8em;
+            color: #502314;
+            margin: 20px;
+            margin-right: 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #8f8f8f60;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        .menu-item .details {
+            flex: 1;
+            text-align: left;
+        }
+
+        .menu-item h2 {
+            font-size: 1.4em;
+            margin: 0;
+            color: #502314;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            margin: 5px 0;
+            color: #502314;
+        }
+
+        .menu-item p {
+            margin: 5px 0;
+            color: #502314;
+        }
+        .menu-item .details a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.menu-item .details a:hover {
+    color: inherit; /
+}
+a {
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Ensure the link can wrap block-level elements */
+}
+
+a:hover {
+    text-decoration: none; /* Ensure the underline doesn't appear on hover */
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <a href="category.html">
+            <div class="header">
+                <div class="back-arrow" onclick="window.history.back();">&larr;</div>
+            </div>
+        </a>
+        
+        <h1 class="header h1 ">The 1K, 2K, 3K, Naira Menu</h1>
+        <div class="menu-item">
+            <div class="details">
+                <a href="Checkout.html">
+                <h2>Onion Rings</h2>
+                <p class="price">₦1,200.00</p>
+                <p>Served hot and crispy, our golden Onion Rings are the perfect treat to accompany any meal</p>
+            </a>
+            </div>
+            <img src="img/image-1.webp" alt="Onion Rings">
+        </div>
+        <div class="menu-item">
+            <div class="details">
+                <a href="Checkout.html">
+                <h2>Sweet Potato</h2>
+                <p class="price">₦1,000.00</p>
+            </div>
+        </a>
+            <img src="img/image-2.webp" alt="Sweet Potato">
+        </div>
+        <div class="menu-item">
+            <div class="details">
+                <a href="Checkout.html">
+                <h2>Plantain</h2>
+                <p class="price">₦1,000.00</p>
+                </a>
+            </div>
+            <img src="img/image-4.webp" alt="Plantain">
+        </div>
+        <div class="menu-item">
+            <div class="details">
+                <a href="Checkout.html">
+                <h2>Cheeseburger</h2>
+                <p class="price">₦2,000.00</p>
+                <p>Classic ingredients flavored just right. You can’t go wrong with our Cheeseburger, a signature item.</p>
+                </a>
+            </div>
+            <img src="img/image-2.webp" alt="Cheeseburger">
+        </div>
+        <div class="menu-item">
+            <div class="details">
+                <a href="Checkout.html">
+                <h2>Whopper Jnr</h2>
+                <p class="price">₦3,000.00</p>
+                <p>Our Whopper Jr. Sandwich features one savory flame-grilled beef patty topped with juicy vegetables.</p>
+                </a>
+            </div>
+            <img src="img/image-4.webp" alt="Whopper Jnr">
+        </div>
+        <div class="menu-item">
+            <div class="details">
+                <a href="Checkout.html">
+                <h2>Chicken Burger</h2>
+                <p class="price">₦2,000.00</p>
+                </a>
+            </div>
+            <img src="img/image-1.webp" alt="Chicken Burger">
+        </div>
+    </div>
+</body>
+</html>

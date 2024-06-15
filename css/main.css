@@ -1,0 +1,220 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:  #F4EBDC;
+    color: #d42603;
+    font-family: 'Lilita One', cursive;
+}
+
+body {
+    font-family: 'Lilita One', cursive
+}
+
+.primary-color {
+    background: #d42603;
+}
+
+.secondary-color {
+    background: #d42703;
+}
+
+.tetiary-color {
+    background: #ff8532;
+}
+
+.primary-btn-wide {
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+    background: #d42603;
+    font-size: 20px;
+    padding: 20px;
+    border: 0;
+}
+
+h3 {
+    font-family: 'Lilita One';
+    font-weight: 700;
+    font-size: 30px; 
+    margin-bottom: 0;
+    color: #4e2415;
+}
+
+.a-link {
+    text-decoration: none; 
+    text-decoration: underline;
+    color: #4e2415;
+    font-weight: bolder;
+}
+
+.paragraph-text {
+    font-family: 'Lilita One', cursive;
+    font-size: 14px;
+    font-weight: light;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.paragraph-text-sm {
+    font-family: 'Lilita One', cursive;
+    font-size: 11px;
+    font-weight: light;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.main-container, .main-container-detail, .main-container-fixed {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	
+}
+
+.main-container {
+    position: absolute;
+    bottom: 40px;
+}
+
+.main-container-detail {
+    position: absolute;
+    top: 0;
+}
+
+ .main-container-fixed1 {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f4ebdc;
+            padding: 5px 0;
+            text-align: center; 
+            font-family: 'Lilita One', cursive;
+        }
+        .col-btn {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .col-btn a {
+            color: #4e2415;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        .col-btn a:hover {
+            color: #FF5722;
+        }
+        .col-btn i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+.coupon-description {
+	text-align: center;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+    width: 100%; 
+}
+
+.carousel-item {
+    flex: 0 0 20%; 
+    scroll-snap-align: start; 
+}
+
+.carousel-item img {
+    width: 100%; 
+}
+
+.coupon-description {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+body {
+	font-family: 'Lilita One', cursive;
+	margin: 0;
+	padding: 0;
+	
+}
+.carousele {
+    display: flex;
+    overflow: hidden; 
+    width: 100%;
+}
+
+.carousel-iteme {
+    flex: 0 0 100%; 
+    display: none; 
+}
+
+.carousel-iteme img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-container-detail {
+	padding: -1px;
+}
+
+.main-container-background img {
+	width: 100%;
+}
+
+.main {
+	margin-top: 20px;
+}
+
+.primary-btn-wide {
+	background-color: #d42603;
+	color: #fff;
+	padding:  20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 19px;
+    font-weight: 300;
+	cursor: pointer;
+	transition: background-color 0.3s;
+    font-family:  'Lilita One', cursive;
+}
+
+.primary-btn-wide:hover {
+	background-color: #693427;
+}
+
+.paragraph-text {
+	font-size: 15px;
+}
+
+
+.carousel-item {
+    flex: 0 0 20%; 
+    scroll-snap-align: start; 
+}
+
+.carousel-item img {
+    width: 100%; 
+}
+
+.coupon-description {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}

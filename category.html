@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <title>Restaurant App</title>
+  <style>
+    body {
+        font-family: 'Lilita One', cursive;
+            background-color: #f4ebdc;
+            margin: 0;
+            padding: 0;
+    }
+    .container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #F4EBDC;
+      
+    }
+    .header {
+      background-color: #F4EBDC;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header1 {
+      background-color: #F4EBDC;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header .title {
+      font-size: 24px;
+      color: #502314;
+    }
+    .header .info-icon {
+      font-size: 24px;
+      color: #502314;
+    }
+    .section {
+      padding: 15px;
+      border-bottom: 1px solid #50231491;
+      font-size: 15px;
+    
+    }
+    .sec {
+      font-size: 10px;
+      padding: 5px;
+      color: #50231485;
+      font-weight: 100;
+      border-bottom: 1px solid #50231425;
+    
+    }
+    .section .section-title {
+      display: flex;
+      align-items: center;
+      color: #502314;
+      justify-content: space-between;
+    }
+    .section .section-title h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    .section .section-title .change-button,
+    .section .section-title .add-button {
+      color: #d9534f;
+      text-decoration: none;
+    }
+    .categories {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      font-size: 22px;
+    }
+    .category-item {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+     
+      text-decoration: none;
+      color: #502314;
+    }
+    .category-item img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .bold-arrow {
+      font-size: 40px;
+      font-weight: bolder;
+      color: #502314;
+    }
+
+    .icon {
+        font-size: 30px;
+      font-weight: bolder;
+      color: #502314;
+      text-decoration-line: none;
+    }
+    @keyframes moveright {
+            from {
+                left: 100%;
+            }
+            to {
+                left: 0%;
+            }
+        }
+
+        i {
+            position: relative;
+            display: inline-block;
+            animation: moveleft 2s forwards;
+        }
+        a {
+    text-decoration: none; 
+    color: inherit; /* Inherit text color from parent elements */
+}
+
+a:hover {
+    text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+
+/* Optional: Style the links to look like plain text or divs */
+a div {
+    display: inline; /* Change to inline if you want it to look like plain text */
+    color: inherit; /* Inherit color to blend with surrounding text */
+}
+
+a div:hover {
+    color: inherit; /* Ensure the color remains the same on hover */
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="dashboard.html">
+    <div class="header" >
+        <div class="bold-arrow">&larr;</div>
+          </a>
+    <a href="cate.html">
+        <div class="icon">&#x24D8;</div>
+    </div></a>
+    <div class="container">
+        <div class="header">
+          <div class="title">Gwarimpa</div>
+        </div>
+        <div class="section" style="display: flex; align-items: center;">
+            <img src="img/image-4.webp" alt="" style="width: 50px; height: 50px; margin-right: 10px;">
+            <div>
+              <div class="section-title" style="display: flex; align-items: center;">
+                <h2 style="margin: 0; margin-right: 50px;">Dine-in</h2>
+                <a href="#" class="change-button" style="margin-right: 100px;"></a>
+              </div>
+              <p style="color: #502314; margin: 0;">
+                <span style="font-weight: lighter;">Today, 15 Apr</span><br>In about 5 min
+              </p>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+
+    <div class="section">
+      <div class="section-title">
+        <h2>Offers</h2>
+        <a href="#" class="add-button">Add</a>
+      </div>
+    </div>
+    <div class="sec">
+        <div class="section-title">
+          <h2>king treat</h2>
+          <a href="#" class="add-button"></a>
+        </div>
+      </div>
+  
+      <ul class="categories">
+        <li><a href="menu.html" class="category-item">
+          <img src="img/image-4.webp" alt="1K, 2K, 3K, Naira Menu">
+          <i style="left: 80%;"> ➤</i>
+          <span>The 1K, 2K, 3K, Naira Menu</span>
+        </a></li>
+        <li><a href="menu.html" class="category-item">
+          <i class="fas fa-arrow-right icon"></i>
+          <img src="img/image-2.webp" alt="Signature">
+          <i style="left: 80%;"> ➤</i>
+          <span>Signature</span>
+        </a></li>
+        <li><a href="menu.html" class="category-item">
+          <i class="fas fa-arrow-right icon"></i>
+          <img src="img/image-1.webp" alt="Classic">
+          <i style="left: 80%;"> ➤</i>
+          <span>Classic</span>
+        </a></li>
+        <li><a href="menu.html" class="category-item">
+          <i class="fas fa-arrow-right icon"></i>
+          <img src="img/image-2.webp" alt="Kids Meals">
+          <i style="left: 80%;"> ➤</i>
+          <span>Kids Meals</span>
+        </a></li>
+        <li><a href="menu.html" class="category-item">
+          <i class="fas fa-arrow-right icon"></i>
+          <img src="img/image-4.webp" alt="Sides & Condiments">
+          <i style="left: 80%;"> ➤</i>
+          <span>Sides & Condiments</span>
+        </a></li>
+        <li><a href="menu.html" class="category-item">
+          <i class="fas fa-arrow-right icon"></i>
+          <img src="img/image-1.webp" alt="Drinks">
+          <i style="left: 80%;"> ➤</i>
+          <span>Drinks</span>
+        </a></li>
+      </ul>
+  </div>
+</body>
+</html>
